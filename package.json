@@ -1,5 +1,5 @@
 {
-  "name": "iss",
+  "name": "saas",
   "version": "1.0.0",
   "main": "",
   "scripts": {
@@ -24,8 +24,8 @@
     "*.{json,md,yml}": "prettier --write",
     "*.{less,css,vue}": [
       "yarn run lint:style"
-		],
-		"*.{js,vue}": [
+    ],
+    "*.{js,vue}": [
       "yarn run lint:script"
     ]
   },
@@ -53,11 +53,16 @@
     "underscore": "^1.10.2",
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
-    "vuex": "^3.5.1"
+    "vuex": "^3.5.1",
+    "xlsx": "^0.16.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/polyfill": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@commitlint/cli": "^9.0.1",

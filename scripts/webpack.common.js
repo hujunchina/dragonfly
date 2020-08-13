@@ -42,29 +42,8 @@ module.exports = {
 		alias: {
 			vue: 'vue/dist/vue.esm.js',
 			'@': paths.appSrc,
-			'@config': paths.appConfig,
-			'@assets': paths.assets,
-			'@components': paths.appComponents,
-			'@page': paths.appPages,
-			'@styles': paths.appStyles,
-			'@services': paths.appServices,
-			'@store': paths.appStore,
-			'@utils': paths.appUtils,
 		},
 	},
-	// optimization: {
-	// 	runtimeChunk: 'single',
-	// 	splitChunks: {
-	// 		chunks: 'all',
-	// 		cacheGroups: {
-	// 			vendor: {
-	// 				test: paths.appNodeModules,
-	// 				name: 'vendors',
-	// 				chunks: 'all',
-	// 			},
-	// 		},
-	// 	},
-	// },
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({

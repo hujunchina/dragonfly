@@ -1,4 +1,21 @@
 {
 	"presets": ["@babel/preset-env"],
-	"plugins": ["@babel/plugin-proposal-optional-chaining"]
+	"plugins": [
+		/**
+		 * polyfill
+		 * 如: async await
+		 * 按需引入 @babel/runtime 下的模块
+		 * 所以依赖 @babel/runtime
+		 */
+		"@babel/plugin-transform-runtime",
+		/**
+		 * 因为语法还在 stage-3 阶段
+		 * 你可以通过
+		 * "vetur.validation.script": false
+		 * 来去掉红色高亮
+		 */
+		"@babel/plugin-proposal-optional-chaining", // .?
+		"@babel/plugin-proposal-nullish-coalescing-operator", // ??
+		["@babel/plugin-proposal-class-properties", { "loose": false }] // class 属性
+	]
 }

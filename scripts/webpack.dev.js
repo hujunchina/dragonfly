@@ -11,7 +11,7 @@ module.exports = merge(common, {
 		compress: true,
 		port: 9902,
 		historyApiFallback: true,
-		open: true,
+		open: false,
 		hot: true,
 		headers: {
 			'Access-Control-Allow-Origin': '*',
