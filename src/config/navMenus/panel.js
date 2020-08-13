@@ -1,0 +1,20 @@
+export default {
+	name: '16',
+	icon: 'ios-paper',
+	label: '面板os平台',
+	roleId: '1',
+	children: [
+		{ label: '主题', name: 'theme' },
+		{ label: '主题属性', name: 'themeProp' },
+		{ label: '布局', name: 'layout' },
+		{ label: '图库', name: 'img' },
+		{ label: '组件', name: 'component' },
+		{ label: '组件类别', name: 'componentType' },
+		{ label: '组件关系', name: 'componentRelation' },
+		{ label: '面板包管理', name: 'designPackage' },
+		{ label: '面板包发布历史', name: 'designPackageHis' },
+		{ label: '面板操作日志', name: 'designPackageOptLog' },
+		{ label: '面板websocket日志', name: 'designPackageWebsocketLog' },
+		{ label: '面板属性配置项管理', name: 'propConfig' },
+	],
+};
