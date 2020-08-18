@@ -29,7 +29,7 @@ import SaasDeviceQuery from '@/page/saas/SaasDeviceQuery.vue';
 // import SaasTools from '@/page/saas/SaasTools.vue';
 // import SaasDeviceLog from '@/page/saas/SaasDeviceLog.vue';
 import SaasShieldResource from '@/page/saas/SaasShieldResource.vue';
-import SaasShieldRole from '@/page/saas/SaasShieldRole.vue';
+// import SaasShieldRole from '@/page/saas/SaasShieldRole.vue';
 // import SaasDeviceProjectChange from '@/page/saas/SaasDeviceProjectChange';
 
 import HotelIndustryAudit from '@/page/hotel/industryAudit/HotelIndustryAudit.vue';
@@ -61,6 +61,8 @@ import SnoopyPermissionModuleManage from '@/page/snoopy/permission/SnoopyPermiss
 import snoopyUtils from '@/page/snoopy/utils/snoopyUtils.vue';
 import SnoopyOemManage from '@/page/snoopy/oem/SnoopyOemManage.vue';
 import SnoopyOemModify from '@/page/snoopy/oem/SnoopyOemModify.vue';
+
+import DeviceJoinIndex from '@/page/devicecenter/deviceJoin/DeviceJoinIndex.vue';
 
 const router = new VueRouter({
 	mode: 'history',
@@ -338,6 +340,12 @@ const router = new VueRouter({
 			name: 'snoopyOemModify',
 			path: '/page/snoopy/oem/snoopyOemModify',
 			component: SnoopyOemModify,
+		},
+		// 设备中心
+		{
+			name: 'deviceJoinIndex',
+			path: '/page/devicecenter/devicejoin/index',
+			component: DeviceJoinIndex,
 		},
 		// 404 页
 		{ path: '*', component: PageNotFound },

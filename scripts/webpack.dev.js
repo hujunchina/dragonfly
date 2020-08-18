@@ -18,7 +18,12 @@ module.exports = merge(common, {
 		},
 		proxy: {
 			'/api/*': {
-				target: 'https://backendng-daily.tuya-inc.cn:7799/',
+				target: 'https://backendng-dev.tuya-inc.cn:7799/',
+				changeOrigin: true,
+				secure: false,
+			},
+			'/proxy/*': {
+				target: 'https://backendng-dev.tuya-inc.cn:8867/',
 				changeOrigin: true,
 				secure: false,
 			},
