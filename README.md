@@ -6,6 +6,7 @@
 
 - 安装依赖包 `yarn install`
 - 运行在开发环境 `yarn run dev`
+- 输入 URL 访问 `http://127.0.0.1:9902/saas/page/devicecenter/devicejoin/index`
 
 ### 代码自动修复
 
